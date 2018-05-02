@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- bootstrap -->
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+
+</head>
+
+<body>
+
+    <div class="container" id="main">
+        <div class="jumbotron" id="mainclouds">
+            <h1 class="display-4">Dream Friend</h1>
+            <p class="lead">Answer some questions and find your match...</p>
+           
+
+
+
+        </div>
+
+
+
+
+        <h1 class="intro"> Friends are on their way. But first, your info...</h1>
+        <div class="card mt-1">
+            <div class="card-body">
+                <form class="userinfo">
+                    <p class="options">First and last name: </p>
+                    <input type="text" name="firstname" class="fields" onfocus="this.value=''" id="fullname">
+            </div>
+        </div>
+        </form>
+        <div class="card mt-1">
+            <div class="card-body">
+                <form class="userinfo">
+                    <p class="options">Upload your photo (required): </p>
+                    <input type="text" id="photoUpload" name="photo" class="fields" onfocus="this.value=''">
+            </div>
+        </div>
+        </form>
+
+
+        <h1 class="intro">Time for some questions...</h1>
+        <div class="card mt-4">
+            <div class="card-body mt-4">
+
+
+                <div class="quest">
+
+                    <h3>
+                        <span class="Q">Q1:</span> A walk in nature heals everything</h3>
+                    <select class="questions" id="question1">
+                        <option class="options" value="0">Do you...</option>
+                        <option class="options" value="1">Strongly Agree</option>
+                        <option class="options" value="2">Somewhat Agree</option>
+                        <option class="options" value="3">Neutral</option>
+                        <option class="options" value="4">Somewhat Disagree</option>
+                        <option class="options" value="5">Strongly Disagree</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+
+        <div class="card mt-4">
+            <div class="card-body mt-4">
+                <div class="quest">
+                    <h3>
+                        <span class="Q">Q2:</span> I want to travel everywhere (even if it means Imodium and no hot water)</h3>
+                    <select class="questions" id="question2">
+                        <option class="options" value="0">Do you...</option>
+                        <option class="options" value="1">Strongly Agree</option>
+                        <option class="options" value="2">Somewhat Agree</option>
+                        <option class="options" value="3">Neutral</option>
+                        <option class="options" value="4">Somewhat Disagree</option>
+                        <option class="options" value="5">Strongly Disagree</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+        <div class="card mt-4">
+            <div class="card-body mt-4">
+                <div class="quest">
+
+                    <h3>
+                        <span class="Q">Q3:</span> A tropical island is the perfect vacation</h3>
+                    <select class="questions" id="question3">
+                        <option class="options" value="0">Do you...</option>
+                        <option class="options" value="1">Strongly Agree</option>
+                        <option class="options" value="2">Somewhat Agree</option>
+                        <option class="options" value="3">Neutral</option>
+                        <option class="options" value="4">Somewhat Disagree</option>
+                        <option class="options" value="5">Strongly Disagree</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+        <div class="card mt-4">
+            <div class="card-body mt-4">
+                <div class="quest">
+                    <h3>
+                        <span class="Q">Q4:</span> I prefer a trip to the movie theater over a movie at home</h3>
+                    <select class="questions" id="question4">
+                        <option class="options" value="0">Do you...</option>
+                        <option class="options" value="1">Strongly Agree</option>
+                        <option class="options" value="2">Somewhat Agree</option>
+                        <option class="options" value="3">Neutral</option>
+                        <option class="options" value="4">Somewhat Disagree</option>
+                        <option class="options" value="5">Strongly Disagree</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+
+       
+
+
+
+        <div class="card mt-4">
+            <div class="card-body mt-4">
+                <div class="quest">
+                    <h3>
+                        <span class="Q">Q5:</span> Restaurants: the fancier, the better</h3>
+                    <select class="questions" id="question5">
+                        <option class="options" value="0">Do you...</option>
+                        <option class="options" value="1">Strongly Agree</option>
+                        <option class="options" value="2">Somewhat Agree</option>
+                        <option class="options" value="3">Neutral</option>
+                        <option class="options" value="4">Somewhat Disagree</option>
+                        <option class="options" value="5">Strongly Disagree</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+        <div class="card mt-4">
+            <div class="card-body mt-4">
+                <div class="quest">
+                    <h3>
+                        <span class="Q">Q6:</span> Pets equal happiness</h3>
+                    <select class="questions" id="question6">
+                        <option class="options" value="0">Do you...</option>
+                        <option class="options" value="1">Strongly Agree</option>
+                        <option class="options" value="2">Somewhat Agree</option>
+                        <option class="options" value="3">Neutral</option>
+                        <option class="options" value="4">Somewhat Disagree</option>
+                        <option class="options" value="5">Strongly Disagree</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+
+        <div class="card mt-4">
+            <div class="card-body mt-4">
+                <div class="quest">
+                    <h3>
+                        <span class="Q">Q7:</span> I enjoy the beach without getting wet.</h3>
+                    <select class="questions" id="question7">
+                        <option class="options" value="0">Do you...</option>
+                        <option class="options" value="1">Strongly Agree</option>
+                        <option class="options" value="2">Somewhat Agree</option>
+                        <option class="options" value="3">Neutral</option>
+                        <option class="options" value="4">Somewhat Disagree</option>
+                        <option class="options" value="5">Strongly Disagree</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+
+        <div class="card mt-4">
+            <div class="card-body mt-4">
+                <div class="quest">
+                    <h3>
+                        <span class="Q">Q8:</span> All-day shopping is the perfect Saturday</h3>
+                    <select class="questions" id="question8">
+                        <option class="options" value="0">Do you...</option>
+                        <option class="options" value="1">Strongly Agree</option>
+                        <option class="options" value="2">Somewhat Agree</option>
+                        <option class="options" value="3">Neutral</option>
+                        <option class="options" value="4">Somewhat Disagree</option>
+                        <option class="options" value="5">Strongly Disagree</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+
+        <div class="card mt-4">
+            <div class="card-body mt-4">
+                <div class="quest">
+                    <h3>
+                        <span class="Q">Q9:</span> A long drive?...who cares!</h3>
+                    <select class="questions" id="question9">
+                        <option class="options" value="0">Do you...</option>
+                        <option class="options" value="1">Strongly Agree</option>
+                        <option class="options" value="2">Somewhat Agree</option>
+                        <option class="options" value="3">Neutral</option>
+                        <option class="options" value="4">Somewhat Disagree</option>
+                        <option class="options" value="5">Strongly Disagree</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+
+        <div class="card mt-4">
+            <div class="card-body mt-4">
+                <div class="quest">
+                    <h3>
+                        <span class="Q">Q10:</span> The bigger the group, the better</h3>
+                    <select class="questions" id="question10">
+                        <option class="options" value="0">Do you...</option>
+                        <option class="options" value="1">Strongly Agree</option>
+                        <option class="options" value="2">Somewhat Agree</option>
+                        <option class="options" value="3">Neutral</option>
+                        <option class="options" value="4">Somewhat Disagree</option>
+                        <option class="options" value="5">Strongly Disagree</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+        <div class="card mt-4">
+            <div class="card-body mt-4">
+                <!-- <button type="submit" id="submitbtn" class="btn btn-primary">Meet your dream friend!</button> -->
+                <button type="button" id="submitbtn" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+                        Find Your Dream Friend
+                      </button>
+            
+            </div>
+        </div>
+
+        <div id="friend">
+                
+                               
+            </div>
+
+
+        <div class="navcontainer">
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <a class="navbar-brand" href="#">Dream Friend 2018</a>
+            </nav>
+        </div>
+    </div>
+        <!-- Modal is here from bootstrap -->
+        <!-- <div class="modal fade" id="myModal" role="dialog">
+        <div class="modal-dialog">
+                <div class="modal-content">
+                        <div class="modal-header">
+                                <h4 class="modal-title">Your Dream Friend</h4>
+                                <div class="modal-body">
+                                        <p id="ModalLabel"> </p>
+                                        <img id="imagepic" src="" alt="">
+                  
+                                    </div>
+                                </div>
+                                
+                              </div>
+                            </div>
+                            
+                          </div> -->
+
+                          <div id="friend">
+
+                               
+                          </div>
+                          
+
+
+                        
+        <div id="myModal" class="modal">
+          
+           <div class="modal-content">
+                <div class="modal-header">
+                    <span class="close">&times;</span>
+                    <h2>Your dream friend is...</h2>
+                </div>
+                <div class="modal-body">
+                    <p id="modalcontent"></p>
+                    <p id="modalphoto"></p>
+                    <p></p>
+                </div>
+                <div class="modal-footer">
+                    <h3></h3>
+                </div>
+            </div>
+        </div> 
+
+    
+
+    <script type="text/javascript">
+$("document").ready(function() {
+        $("#submitbtn").on("click", function () {
+
+            var newEntry = {
+                name: fullname.value,
+                photo: photoUpload.value,
+                score: [question1.value,
+                question2.value,
+                question3.value,
+                question4.value,
+                question5.value,
+                question6.value,
+                question7.value,
+                question8.value,
+                question9.value,
+                question10.value,
+                ]
+            };
+            console.log(newEntry);
+            var currentURL = window.location.origin;
+            $.post(currentURL + "/api/friends", newEntry, function (data) {
+                console.log("this is data " + data);
+                $("#friend").append('<p id="final">' + "Meet Your Dream Friend: " + data.name + '</p>');
+                $("#friend").append('<img style="width:300px; height:300px;" src='+data.photo+'>');
+                
+            // $("#Mymodal").modal("show");
+
+
+           
+                });
+                
+            });
+
+        });
+
+    </script>
+
+</body>

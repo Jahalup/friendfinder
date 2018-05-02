@@ -1,0 +1,74 @@
+body {
+    /* background-color:rgb(47, 153, 185);  */
+    background-image:url("clouds.jpg");
+text-align: center;
+
+}
+.questions:hover {background-color: #2d2e5056;
+    
+}
+#main {
+    background-color: rgba(9, 25, 46, 0.342);
+    color: white;
+}
+.questions:hover .questions {
+    display: block;
+}
+.questions {
+    font-size: 30px;
+    background-color: rgba(45, 61, 77, 0.5);
+    color: white;
+    border: 2px solid rgba(17, 16, 27, 0.425);
+    border-radius: 8px;
+   
+    
+    
+}
+
+
+
+.userinfo, .intro {
+    font-size: 30px;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+#clouds, #mainclouds{
+    background-image:url("clouds.jpg");
+    color: black;
+   
+} 
+.navbar a{
+   text-align: center;
+}
+h3, .intro, .options {
+    font-family: 'Raleway', sans-serif;
+}
+.card {
+    background-color: rgba(45, 61, 77, 0.603);
+}
+
+#upload {
+    font-size: 30px;
+}
+
+.fields {
+    border: 2px solid rgba(17, 16, 27, 0.425);
+    border-radius: 8px;
+}
+
+.intro {
+    font-size: 40px;
+    padding: 30px;
+}
+.Q {
+  
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    color: rgba(106, 106, 122, 0.87);
+}
+
+#final {
+    font-size: 50px;
+    font-family: 'Raleway', sans-serif;
+
+}
+
+
