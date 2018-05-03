@@ -1,6 +1,7 @@
 
 var path = require('path');
 
+// Export for Node, routes to two html pages
 module.exports = function(app) {
 app.get("/survey", function(req, res) {
 res.sendFile(path.join(__dirname + '/../public/survey.html'))
@@ -14,7 +15,4 @@ app.get('/', function (req, res) {
 
 
 
-// Your `htmlRoutes.js` file should include two routes:
 
-//    * A GET Route to `/survey` which should display the survey page.
-//    * A default, catch-all route that leads to `home.html` which displays the home page. 

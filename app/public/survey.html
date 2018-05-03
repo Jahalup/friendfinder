@@ -9,8 +9,8 @@
     <!-- Jquery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <!-- bootstrap -->
-
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
     <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
 
@@ -22,43 +22,35 @@
         <div class="jumbotron" id="mainclouds">
             <h1 class="display-4">Dream Friend</h1>
             <p class="lead">Answer some questions and find your match...</p>
-           
-
-
-
         </div>
-
-
-
-
+<!-- User data input -->
         <h1 class="intro"> Friends are on their way. But first, your info...</h1>
         <div class="card mt-1">
             <div class="card-body">
                 <form class="userinfo">
                     <p class="options">First and last name: </p>
                     <input type="text" name="firstname" class="fields" onfocus="this.value=''" id="fullname">
+                </form>
             </div>
         </div>
-        </form>
+      
         <div class="card mt-1">
             <div class="card-body">
                 <form class="userinfo">
                     <p class="options">Upload your photo (required): </p>
                     <input type="text" id="photoUpload" name="photo" class="fields" onfocus="this.value=''">
+                </form>    
             </div>
         </div>
-        </form>
+    </form>
+       
 
-
+<!-- Questions(10) -->
         <h1 class="intro">Time for some questions...</h1>
         <div class="card mt-4">
             <div class="card-body mt-4">
-
-
                 <div class="quest">
-
-                    <h3>
-                        <span class="Q">Q1:</span> A walk in nature heals everything</h3>
+                        <h3><span class="Q">Q1:</span> A walk in nature heals everything</h3>
                     <select class="questions" id="question1">
                         <option class="options" value="0">Do you...</option>
                         <option class="options" value="1">Strongly Agree</option>
@@ -87,10 +79,10 @@
                 </div>
             </div>
         </div>
+
         <div class="card mt-4">
             <div class="card-body mt-4">
                 <div class="quest">
-
                     <h3>
                         <span class="Q">Q3:</span> A tropical island is the perfect vacation</h3>
                     <select class="questions" id="question3">
@@ -104,6 +96,7 @@
                 </div>
             </div>
         </div>
+
         <div class="card mt-4">
             <div class="card-body mt-4">
                 <div class="quest">
@@ -120,10 +113,7 @@
                 </div>
             </div>
         </div>
-
        
-
-
 
         <div class="card mt-4">
             <div class="card-body mt-4">
@@ -141,6 +131,7 @@
                 </div>
             </div>
         </div>
+
         <div class="card mt-4">
             <div class="card-body mt-4">
                 <div class="quest">
@@ -225,76 +216,46 @@
                 </div>
             </div>
         </div>
+        <!-- Submit button -->
         <div class="card mt-4">
             <div class="card-body mt-4">
-                <!-- <button type="submit" id="submitbtn" class="btn btn-primary">Meet your dream friend!</button> -->
-                <button type="button" id="submitbtn" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+                <button type="button" id="submitbtn" class="btn btn-primary">
                         Find Your Dream Friend
                       </button>
             
             </div>
         </div>
 
-        <div id="friend">
-                
-                               
-            </div>
-
-
+<!-- Navbar link -->
         <div class="navcontainer">
             <nav class="navbar navbar-expand-lg navbar-light">
-                <a class="navbar-brand" href="#">Dream Friend 2018</a>
+                <a class="navbar-brand" href="https://github.com/Jahalup/friendfinder" target="_blank">Dream Friend 2018</a>
             </nav>
         </div>
-    </div>
-        <!-- Modal is here from bootstrap -->
-        <!-- <div class="modal fade" id="myModal" role="dialog">
-        <div class="modal-dialog">
-                <div class="modal-content">
-                        <div class="modal-header">
-                                <h4 class="modal-title">Your Dream Friend</h4>
-                                <div class="modal-body">
-                                        <p id="ModalLabel"> </p>
-                                        <img id="imagepic" src="" alt="">
-                  
-                                    </div>
-                                </div>
-                                
-                              </div>
+    </div>    
+        
+<!-- Modal content -->
+                <div id="myModal" class="modal">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <span class="close">&times;</span>
+                                <h2 id="modalh2">Your dream friend is...</h2>
                             </div>
-                            
-                          </div> -->
-
-                          <div id="friend">
-
-                               
-                          </div>
-                          
-
-
-                        
-        <div id="myModal" class="modal">
-          
-           <div class="modal-content">
-                <div class="modal-header">
-                    <span class="close">&times;</span>
-                    <h2>Your dream friend is...</h2>
-                </div>
-                <div class="modal-body">
-                    <p id="modalcontent"></p>
-                    <p id="modalphoto"></p>
-                    <p></p>
-                </div>
-                <div class="modal-footer">
-                    <h3></h3>
-                </div>
-            </div>
-        </div> 
-
+                            <div class="modal-body">
+                                <p id="modalcontent"></p>
+                                <img id="modalphoto">
+                                <p></p>
+                            </div>
+                            <div class="modal-footer">
+                                <h3></h3>
+                            </div>
+                        </div>
+                    </div>
     
-
+<!-- JS logic for button onclick -->
     <script type="text/javascript">
-$("document").ready(function() {
+   
+
         $("#submitbtn").on("click", function () {
 
             var newEntry = {
@@ -315,20 +276,34 @@ $("document").ready(function() {
             console.log(newEntry);
             var currentURL = window.location.origin;
             $.post(currentURL + "/api/friends", newEntry, function (data) {
-                console.log("this is data " + data);
-                $("#friend").append('<p id="final">' + "Meet Your Dream Friend: " + data.name + '</p>');
-                $("#friend").append('<img style="width:300px; height:300px;" src='+data.photo+'>');
-                
-            // $("#Mymodal").modal("show");
+                var modal = document.getElementById('myModal');
+                var btn = document.getElementById('submitbtn');
+                var span = document.getElementsByClassName("close")[0];
+                var dreamphoto = document.getElementById("modalphoto");
+                var dreamname = document.getElementById("modalcontent");
+                if(data.photo !== "") 
+                {dreamphoto.src=data.photo}
+                // default photo
+                else {
+                    dreamphoto.src="https://upload.wikimedia.org/wikipedia/commons/c/c8/Stickfigs.png"
+                }
+               dreamname.innerHTML = data.name;
+               
+                        modal.style.display = "block";
+                       
+                    span.onclick = function () {
+                        modal.style.display = "none";
+                    }
+                    window.onclick = function (event) {
+                        if (event.target == modal) {
+                            modal.style.display = "none";
+                        }
+                    }
 
-
-           
                 });
-                
+           
             });
-
-        });
-
+                
     </script>
 
 </body>

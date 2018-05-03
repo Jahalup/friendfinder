@@ -1,36 +1,40 @@
-body {
-    /* background-color:rgb(47, 153, 185);  */
-    background-image:url("clouds.jpg");
-text-align: center;
 
+/* Main Content */
+body {
+    background-image:url("clouds.jpg");
+    text-align: center;
 }
-.questions:hover {background-color: #2d2e5056;
-    
-}
+
+
 #main {
     background-color: rgba(9, 25, 46, 0.342);
     color: white;
 }
+
+.questions:hover {
+    background-color: #2d2e5056;
+}
+
+
 .questions:hover .questions {
     display: block;
 }
+
 .questions {
     font-size: 30px;
     background-color: rgba(45, 61, 77, 0.5);
     color: white;
     border: 2px solid rgba(17, 16, 27, 0.425);
-    border-radius: 8px;
-   
-    
-    
+    border-radius: 8px;   
 }
-
 
 
 .userinfo, .intro {
     font-size: 30px;
     text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
+
+/* Image backgrounds */
 #clouds, #mainclouds{
     background-image:url("clouds.jpg");
     color: black;
@@ -71,4 +75,76 @@ h3, .intro, .options {
 
 }
 
+#submitbtn {
+    background-color:rgba(43, 43, 180, 0.521);
+    color: white;
+    font-size: 20px;
+}
 
+/* Modal Styles */
+.modal {
+   
+  transform: translate(-50%, -50%);
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 50%;
+    top: 50%;
+    width: 700px; /* Full width */
+    height: 500px; /* Full height */
+    overflow: auto; 
+    background-color: rgba(93, 92, 114, 0.5); /* Fallback color */
+    background-color: rgba(81, 102, 131, 0.4); /* Black w/ opacity */
+    margin: 30px;
+}
+
+
+.modal-content {
+    background-color: #6f8996e8;
+    margin: 20px; 
+    padding: 20px;
+    border: 10px solid rgb(54, 59, 83);
+    width: 90%; 
+}
+
+/* The Close Button */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    margin-left: 5px;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+   
+}
+
+#modalphoto {
+    width: 200px;
+    height: 200px;
+}
+
+.modal-header {
+    font-family: 'Raleway', sans-serif;
+    color: black;
+    font-size: 30px;
+    justify-content:center;
+}
+
+#modalcontent {
+    color: black;
+    font-size: 25px;
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+}
+.modal-header .close {
+    margin-left: -100px;
+}
+#modalh2 {
+    margin-left: 50px;
+}

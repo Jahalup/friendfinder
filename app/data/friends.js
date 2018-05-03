@@ -1,7 +1,7 @@
 var friendlist = [{
     "name": "Mr.Fluffy",
     "photo": "https://upload.wikimedia.org/wikipedia/commons/3/3b/Rabbit_in_montana.jpg",
-    "score": [ 5, 3, 1, 2, 4, 3, 2, 1, 5, 5]   
+    "score": [ 1, 3, 1, 2, 1, 3, 2, 1, 1, 1]   
 },
 {
     "name": "Mrs.Slow",
@@ -17,12 +17,12 @@ var friendlist = [{
 {
     "name": "Mr. Spike",
     "photo": "https://upload.wikimedia.org/wikipedia/commons/8/8c/PorcupineCabelasSpringfield0511.jpg",
-    "score": [ 3, 3, 3, 1, 4, 4, 4, 2, 2, 1]
+    "score": [ 5, 5, 3, 4, 4, 4, 4, 3, 2, 4]
 },
 {
     "name": "Mrs. Slither",
     "photo": "https://upload.wikimedia.org/wikipedia/commons/a/a4/EpicratesCenchriaCenchria1.jpg",
-    "score": [ 5, 4, 4, 5, 4, 2, 1, 3, 5, 1]
+    "score": [ 5, 5, 4, 5, 4, 5, 5, 5, 5, 5]
 }
 
 ]
